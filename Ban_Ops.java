@@ -1,16 +1,16 @@
 public class Ban_Ops{
 
     private float pago;
-    private int tipo;
+    private Ban_Ops tipo;
 
 
     public void calc_pay(int tipo, float wFlow)
     {
-        if(tipo==1)
+        if(tipo instaceOf Pago_Cable)
         {
-            setPago(500.00);
+            setPago(Float.valueOf(500));
         }
-        else if(tipo==0)
+        else if(tipo instanceOf Pago_Agua)
         {
             if(wFlow<=10)
             {
@@ -18,7 +18,7 @@ public class Ban_Ops{
             } 
             else if(wFlow<30)
             {
-                setPago(wFlow*12.50);
+                setPago(wFlow*Float.valueOf("12.5"));
             }
             else
             {
