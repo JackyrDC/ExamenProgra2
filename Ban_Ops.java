@@ -1,16 +1,16 @@
 public class Ban_Ops{
 
     private float pago;
-    private Ban_Ops tipo;
+    private Class tipo;
 
 
-    public void calc_pay(int tipo, float wFlow)
+    public void calc_pay(Class tipo, float wFlow)
     {
-        if(tipo instaceOf Pago_Cable)
+        if(tipo== Pago_Cable.class)
         {
             setPago(Float.valueOf(500));
         }
-        else if(tipo instanceOf Pago_Agua)
+        else if(tipo == Pago_Agua.class)
         {
             if(wFlow<=10)
             {
@@ -31,6 +31,7 @@ public class Ban_Ops{
         }
 
     }
+
     public void setPago(float pago)
     {
         this.pago=pago;
